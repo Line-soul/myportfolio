@@ -1,0 +1,363 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    max-width: 1400px;
+    margin: 0 auto;
+    background: #ffffffff;
+    font-family: 'Great Vibes';
+    font-style: normal;
+    font-weight: 400;
+    
+}
+
+.hero--container {
+    width: 100%;
+}
+
+.container {
+    width: 1400px;
+    /*margin: 0 auto;*/
+}
+
+header {
+    padding: 20px;
+}
+
+header .Myheader {
+    color: #1633C5;
+    font-size: 44px;
+}
+
+header nav {
+    float: right;
+    width: 30%;
+    padding-right: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 36px;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: #4B3B49;
+}
+
+header nav ul li.active::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 5px;
+    background: #D9C400;
+    border-radius: 5px;
+}
+
+header nav ul li:not(.active):not(.btn) a:hover {
+    border-bottom: 5px solid #D9C400;
+}
+
+header nav ul li.btn a {
+    background: #D9C400;
+    padding: 9px 17px;
+    border-radius: 10px;
+    transition: all 500 ms ease;
+}
+
+header nav ul li.btn a:hover {
+    background: #af9d00;
+}
+
+.hero--container {
+    width: 1400px;
+}
+
+.gold {
+    width: 1400px;
+    margin-left: 27px;
+}
+
+.gold img {
+     width: 1346px;
+     height: auto;
+
+}
+
+.about--me {
+    width: 1400px;
+    margin-left: 22px;
+    position: relative;
+    z-index: 1;
+    
+}
+
+.about--me img {
+     width: 1356px;
+     height: auto;
+     position: relative;
+     z-index: 1;
+}
+
+.about--me .name {
+    display: inline-start;
+    position: absolute;
+    top: 35px;
+    left: 55px;
+    font-size: 25px;
+    color: #FFFFFFFF;
+    z-index: 2;
+}
+
+.about--me .info {
+    position: absolute;
+    display: inline-start;
+    position: absolute;
+    top: 25px;
+    left: 350px;
+    width: 950px;
+    color: #FFFFFFFF;
+    z-index: 2;
+
+}
+
+.about--me .text_1_1 {
+    font-size: 35px;
+    color: #FFFFFFFF;
+    z-index: 2;
+}
+.about--me .text_1_2 {
+    position: absolute;
+    left: -300px;
+    bottom: -250px;
+    font-size: 35px;
+    color: #FFFFFFFF;
+    z-index: 2;
+}
+
+.about--me .text_motivation {
+    position: absolute;
+    left: -300px;
+    bottom: -330px;
+    font-size: 50px;
+    color: #FCCA05;
+}
+
+.about--myService {
+    width: 1400px;
+    margin-left: 22px;
+    position: relative;
+    z-index: 1;
+}
+
+.about--myService .name_2 {
+    display: inline-start;
+    position: absolute;
+    top: 148px;
+    left: 45px;
+    font-size: 25px;
+    color: #FFFFFFFF;
+    z-index: 2;
+}
+
+.about--myService .info {
+    position: absolute;
+    display: inline-start;
+    position: absolute;
+    top: 25px;
+    left: 350px;
+    width: 950px;
+    color: #FFFFFFFF;
+    z-index: 2;
+    font-size: 35px;
+
+}
+
+.about--myService img {
+     width: 1356px;
+     height: auto;
+}
+
+.about--myContacts {
+    width: 1400px;
+    margin-left: 22px;
+    position: relative;
+    z-index: 1;
+}
+
+.about--myContacts .name_3 {
+    display: inline-start;
+    position: absolute;
+    top: 235px;
+    left: 55px;
+    font-size: 25px;
+    color: #FFFFFFFF;
+    z-index: 2;
+}
+
+.about--myContacts .info {
+    position: absolute;
+    display: inline-start;
+    top: 25px;
+    left: 350px;
+    width: 950px;
+    color: #FCCA05;
+    z-index: 2;
+    font-size: 35px;
+
+}
+
+.about--myContacts .text_3_1 {
+    margin-top: 100px;
+}
+.about--myContacts .email {
+    margin-top: 20px;
+    margin-left: 15%;
+    font-size: 70px;
+    color:  #FCCA05;
+    text-align: center;
+}
+
+.about--myContacts img {
+     width: 1356px;
+     height: auto;
+}
+
+.final {
+    padding-top: 25px;
+    font-size: 25px;
+    color: #1633C5;
+    width: 1400px;
+    text-align: center;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  color: #4B3B49;
+  background-color: rgba(255, 255, 255, 0.803);
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  /*width: 80%;*/
+  max-width: 800px;
+  position: relative;
+  /*box-shadow: 0 0 10px rgba(0,0,0,0.7);*/
+  overflow: hidden;
+}
+
+.modal-content .email {
+    display: block;
+    /*margin: 0 auto;*/  
+    width: auto;
+    font-size: 20px;
+    text-align: center;
+    color:  #FCCA05;
+}
+
+form {
+    margin-top: 10px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form_mod {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.modal-content form label {
+    font-size: 15px;
+    color: #4B3B49;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.modal-content form input,
+.modal-content form textarea {
+    font-size: 15px;
+    border-radius: 10px;
+    border: 0.6px solid #4B3B49;
+    display: block;
+    width: 100%;
+    padding: 5px 2px;
+    outline: none;
+    font-family: 'Great Vibes';
+    font-style: normal;
+    font-weight: 400;
+    color: #4B3B49;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.modal-content form textarea {
+    resize: none;
+    height: 100px;
+}
+
+.modal-content .inline {
+    
+    /*margin: 0 auto;*/
+    
+    display: block;
+    justify-self: space-between;
+}
+
+.modal-content .inline>div {
+    width: 50%;
+    
+}
+
+.modal-content button {
+    background: #4B3B49;
+    padding: 9px 17px;
+    border-radius: 10px;
+    transition: all 500 ms ease;
+    margin-top: 5px;
+    float: right;
+    font-family: 'Great Vibes';
+    font-style: normal;
+    font-weight: 400;
+    color: #FFFFFFFF;
+    font-size: 15px;
+}
+
+.modal-content button:hover {
+    background: #372b35;
+}
+
+.close {
+  position: absolute;
+  right: 10px;
+  font-size: 35px;
+  cursor: pointer;
+  top: -5px;
+  
+}

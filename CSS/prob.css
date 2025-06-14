@@ -1,0 +1,380 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+html {
+    font-size: 10px;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 4.8px;
+    }
+}
+
+@media (max-width: 1080px) {
+    html {
+        font-size: 7.71px;
+    }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    max-width: 140rem;
+    margin: 0 auto;
+    background: #ffffffff;
+    font-family: 'Great Vibes';
+    font-style: normal;
+    font-weight: 400;
+    
+}
+
+.hero--container {
+    width: 100%;
+}
+
+.container {
+    width: 140rem;
+    /*margin: 0 auto;*/
+}
+
+header {
+    padding: 2rem;
+}
+
+header .Myheader {
+    color: #1633C5;
+    font-size: 4.4rem;
+}
+
+header nav {
+    float: right;
+    width: 30%;
+    padding-right: 5rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 3.6rem;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: #4B3B49;
+}
+
+header nav ul li.active::after {
+    content: '';
+    display: block;
+    width: 8rem;
+    height: 0.5rem;
+    background: #D9C400;
+    border-radius: 5rem;
+}
+
+header nav ul li:not(.active):not(.btn) a:hover {
+    border-bottom: 0.5rem solid #D9C400;
+}
+
+header nav ul li.btn a {
+    background: #D9C400;
+    padding: 0.9rem 1.7rem;
+    border-radius: 1rem;
+    transition: all 500 ms ease;
+}
+
+header nav ul li.btn a:hover {
+    background: #af9d00;
+}
+
+.hero--container {
+    width: 140rem;
+}
+
+.gold {
+    width: 140rem;
+    margin-left: 2.7rem;
+}
+
+.gold img {
+     width: 134.6rem;
+     height: auto;
+
+}
+
+.about--me {
+    width: 140rem;
+    margin-left: 2.2rem;
+    position: relative;
+    z-index: 1;
+    
+}
+
+.about--me img {
+     width: 135.6rem;
+     height: auto;
+     position: relative;
+     z-index: 1;
+}
+
+.about--me .name {
+    display: inline-start;
+    position: absolute;
+    top: 3.5rem;
+    left: 5.5rem;
+    font-size: 2.5rem;
+    color: #FFFFFFFF;
+    z-index: 2;
+}
+
+.about--me .info {
+    position: absolute;
+    display: inline-start;
+    position: absolute;
+    top: 2.5rem;
+    left: 35.0rem;
+    width: 95.0rem;
+    color: #FFFFFFFF;
+    z-index: 2;
+
+}
+
+.about--me .text_1_1 {
+    font-size: 3.5rem;
+    color: #FFFFFFFF;
+    z-index: 2;
+}
+.about--me .text_1_2 {
+    position: absolute;
+    left: -30.0rem;
+    bottom: -25.0rem;
+    font-size: 3.5rem;
+    color: #FFFFFFFF;
+    z-index: 2;
+}
+
+.about--me .text_motivation {
+    position: absolute;
+    left: -30.0rem;
+    bottom: -33.0rem;
+    font-size: 5.0rem;
+    color: #FCCA05;
+}
+
+.about--myService {
+    width: 140.0rem;
+    margin-left: 2.2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.about--myService .name_2 {
+    display: inline-start;
+    position: absolute;
+    top: 14.8rem;
+    left: 4.5rem;
+    font-size: 2.5rem;
+    color: #FFFFFFFF;
+    z-index: 2;
+}
+
+.about--myService .info {
+    position: absolute;
+    display: inline-start;
+    position: absolute;
+    top: 2.5rem;
+    left: 35.0rem;
+    width: 95.0rem;
+    color: #FFFFFFFF;
+    z-index: 2;
+    font-size: 3.5rem;
+
+}
+
+.about--myService img {
+     width: 135.6rem;
+     height: auto;
+}
+
+.about--myContacts {
+    width: 140.0rem;
+    margin-left: 2.2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.about--myContacts .name_3 {
+    display: inline-start;
+    position: absolute;
+    top: 23.5rem;
+    left: 5.5rem;
+    font-size: 2.5rem;
+    color: #FFFFFFFF;
+    z-index: 2;
+}
+
+.about--myContacts .info {
+    position: absolute;
+    display: inline-start;
+    top: 2.5rem;
+    left: 35.0rem;
+    width: 95.0rem;
+    color: #FCCA05;
+    z-index: 2;
+    font-size: 3.5rem;
+
+}
+
+.about--myContacts .text_3_1 {
+    margin-top: 10.0rem;
+}
+.about--myContacts .email {
+    margin-top: 2.0rem;
+    margin-left: 15%;
+    font-size: 7.0rem;
+    color:  #FCCA05;
+    text-align: center;
+}
+
+.about--myContacts img {
+     width: 135.6rem;
+     height: auto;
+}
+
+.final {
+    padding-top: 2.5rem;
+    font-size: 2.5rem;
+    color: #1633C5;
+    width: 140.0rem;
+    text-align: center;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  color: #4B3B49;
+  background-color: rgba(255, 255, 255, 0.803);
+  margin: 10% auto;
+  padding: 2.0rem;
+  border-radius: 1.0rem;
+  /*width: 80%;*/
+  max-width: 80.0rem;
+  position: relative;
+  /*box-shadow: 0 0 10px rgba(0,0,0,0.7);*/
+  overflow: hidden;
+}
+
+.modal-content .email {
+    display: block;
+    /*margin: 0 auto;*/  
+    width: auto;
+    font-size: 2.0rem;
+    text-align: center;
+    color:  #FCCA05;
+}
+
+form {
+    margin-top: 1.0rem;
+    width: 60.0rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form_mod {
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.modal-content form label {
+    font-size: 1.5rem;
+    color: #4B3B49;
+    display: block;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.modal-content form input,
+.modal-content form textarea {
+    font-size: 1.5rem;
+    border-radius: 1.0rem;
+    border: 0.06px solid #4B3B49;
+    display: block;
+    width: 100%;
+    padding: 0.5px 0.2rem;
+    outline: none;
+    font-family: 'Great Vibes';
+    font-style: normal;
+    font-weight: 400;
+    color: #4B3B49;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.modal-content form textarea {
+    resize: none;
+    height: 10.0rem;
+}
+
+.modal-content .inline {
+    
+    /*margin: 0 auto;*/
+    
+    display: block;
+    justify-self: space-between;
+}
+
+.modal-content .inline>div {
+    width: 50%;
+    
+}
+
+.modal-content button {
+    background: #4B3B49;
+    padding: 0.9px 0.17rem;
+    border-radius: 1.0rem;
+    transition: all 500 ms ease;
+    margin-top: 0.5rem;
+    float: right;
+    font-family: 'Great Vibes';
+    font-style: normal;
+    font-weight: 400;
+    color: #FFFFFFFF;
+    font-size: 1.5rem;
+}
+
+.modal-content button:hover {
+    background: #372b35;
+}
+
+.close {
+  position: absolute;
+  right: 1.0rem;
+  font-size: 3.5rem;
+  cursor: pointer;
+  top: -0.5rem;
+  
+}
