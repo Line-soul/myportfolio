@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="/CSS/prob.css">
+    <link rel="icon" href="/img/soul.svg" type="image/svg">
+</head>
+<body>
+    <header class="container">
+        <span class="Myheader">Портфолио как прототип сайта</span>
+        <nav>
+            <ul>
+            <li class="active"><a href="#about_me_link">О себе</a></li>
+            <li><a href="#about_service_link">Услуги</a></li>
+            <li class="btn"><a href="#about_contacts_link" id="openModalBtn">Контакты</a></li>
+            </ul>
+        </nav>
+            
+        
+    </header>
+    <div class="hero--container">
+        <div class="gold">
+            <img src="/img/gold.svg" alt="Золото">
+        </div>
+        <div class="about--me" id="about_me_link">
+            <img  src="/img/sun.svg" alt="Солнце и восход к нему">
+
+            <div class="name">
+                <h2>О себе</h2>
+            </div>
+            <div class="info">
+                <p class="text_1_1">Приветствую тебя, мой дорогой друг! Сейчас я хотел бы немного рассказать о себе. Я очень люблю познавать новое, особенно то, что связано с IT-технологиями, ведь при грамотном подходе в них можно увидеть много чего интересного. Сейчас я решил открыть для себя новое направление, которое мне пригодится в будущем для личного опыта - верстка сайтов. Сам я обладаю техническим образованием, связанным с АСУ ТП и выступаю там в роли программиста.</p>
+                <p class="text_1_2"> В университете мы проходили разработку Web-сайтов, и в тот момент мне стала интересна эта тема. И вот прошло несколько лет и я снова здесь. Без условно, я не могу сказать, что я новичок в этом деле, но мне бы хотелось выйти на новый уровень своих знаний. Кто ведает, вдруг когда-нибудь эти знания пригодятся мне в моей основной профессии.</p>
+                <p class="text_motivation"> А чего хотите Вы?</p>
+            </div>
+        </div>
+        
+        <div class="about--myService" id="about_service_link">
+            
+            <img src="/img/develop.svg" alt="Разработка">
+
+            <div class="name_2">
+                <h2>Услуги</h2>
+            </div>
+            <div class="info">
+                <p class="text_2_1">Если рассматривать виды услуг, которые могут быть Вам полезны, то я могу предоставить следующие:</p>
+                    <p class="text_2_2">1) Разработка Лендинга</p>
+                    <p class="text_2_3">2) Разработка сайта-визитки</p>
+                    <p class="text_2_4">3) HTML + CSS вёрстка из Figma / макета</p>
+            </div>
+        </div>
+
+        <div class="about--myContacts">
+            
+            <img src="/img/contacts.svg" alt="Контакты">
+
+            <div class="name_3" id="about_contacts_link">
+                <h2>Контакты</h2>
+            </div>
+            <div class="info">
+                <p class="text_3_1">В настоящее время со мной можно связаться только по почте:</p>
+                <a href="mailto:rushandr@mail.ru" class="email">rushandr@mail.ru</a>
+            </div>
+        </div>
+
+        <footer class="final">
+            <p>Портфолио как прототип сайта</p>
+        </footer>
+
+    </div>
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 class="form_mod">Форма обратной связи</h2>
+    <p class="form_mod">В тестовом режиме! Для связи используйте мой email:</p>
+    <a href="mailto:rushandr@mail.ru" class="email">rushandr@mail.ru</a>
+    
+    <form>
+        <div class="inline">
+            <label for="name">Имя:</label>
+            <input type="text" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+        </div>
+        <div>
+            <label for="message" class="message_mod">Сообщение:</label>
+            <textarea id="message" class="online"></textarea>
+        </div>
+        
+        <button type="submit" class="btn_send">Отправить</button>
+    </form>
+  </div>
+</div>
+
+<script>
+  const modal = document.getElementById("modal");
+  const openBtn = document.getElementById("openModalBtn");
+  const closeBtn = document.querySelector(".close");
+
+  openBtn.onclick = function(event) {
+    event.preventDefault(); // предотвращаем переход по якорю
+    modal.style.display = "block";
+  }
+
+  closeBtn.onclick = () => modal.style.display = "none";
+
+  window.onclick = event => {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
+</body>
+</html>
